@@ -1,0 +1,55 @@
+{
+  "team": {
+    "name": "YOUR TEAM NAME",
+    "tagline": "Prototype Playtest Lab",
+    "logo": "assets/logo.png"
+  },
+  "launcher": {
+    "fullscreen": true,
+    "hide_mouse_cursor": true,
+    "minimize_while_playing": true,
+    "return_cooldown_seconds": 1.0,
+    "force_quit_hold_seconds": 3.0,
+    "operator_exit_hold_seconds": 3.0,
+    "footer_text": "Tell us what you think - we'd love your feedback!"
+  },
+  "games": [
+    {
+      "id": "space_gardeners",
+      "title": "Space Gardeners",
+      "genre": "Co-op Puzzle",
+      "players": "1-2 players",
+      "developer": "YOUR TEAM NAME",
+      "version": "prototype 0.3",
+      "description": "Grow plants on a drifting space station before the oxygen runs out. Replace this text with a short pitch (2-3 sentences work best).",
+      "controls": "Left stick: move\nA: plant / water\nB: harvest\nStart: pause",
+      "thumbnail": "assets/thumbnails/space_gardeners.png",
+      "executable": {
+        "windows": "games/space_gardeners/SpaceGardeners.exe",
+        "linux": "games/space_gardeners/SpaceGardeners.x86_64",
+        "macos": "games/space_gardeners/SpaceGardeners.app"
+      },
+      "args": [
+        "--fullscreen"
+      ]
+    },
+    {
+      "id": "turbo_snails",
+      "title": "Turbo Snails",
+      "genre": "Racing",
+      "players": "2-4 players",
+      "developer": "YOUR TEAM NAME",
+      "version": "prototype 0.1",
+      "description": "Slow and steady loses the race. Boost, slime and bump your way across the garden.",
+      "controls": "Right trigger: accelerate\nLeft stick: steer\nA: slime boost",
+      "thumbnail": "assets/thumbnails/turbo_snails.png",
+      "executable": "games/turbo_snails/TurboSnails.exe"
+    },
+    {
+      "id": "disabled_example",
+      "title": "Hidden Example",
+      "enabled": false,
+      "executable": "games/hidden/Hidden.exe"
+    }
+  ]
+}

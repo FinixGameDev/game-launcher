@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/toast.gd" id="1_script"]
+[ext_resource type="Theme" path="res://theme/launcher_theme.tres" id="2_theme"]
+
+[node name="Toast" type="PanelContainer"]
+visible = false
+size_flags_horizontal = 4
+theme = ExtResource("2_theme")
+theme_type_variation = &"ToastPanel"
+script = ExtResource("1_script")
+
+[node name="Message" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"ToastLabel"
+text = "Something happened"
+horizontal_alignment = 1

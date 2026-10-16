@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/info_overlay.gd" id="1_script"]
+[ext_resource type="Theme" path="res://theme/launcher_theme.tres" id="2_theme"]
+
+[node name="InfoOverlay" type="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+theme_type_variation = &"DimBackdrop"
+script = ExtResource("1_script")
+
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card" type="PanelContainer" parent="Center"]
+custom_minimum_size = Vector2(1100, 0)
+layout_mode = 2
+theme_type_variation = &"OverlayPanel"
+
+[node name="Column" type="VBoxContainer" parent="Center/Card"]
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Title" type="Label" parent="Center/Card/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"OverlayTitle"
+text = "Game Title"
+
+[node name="Body" type="Label" parent="Center/Card/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+theme_type_variation = &"OverlayBody"
+text = "CONTROLS
+Left stick: move
+A: jump"
+autowrap_mode = 3
+
+[node name="CloseHint" type="Label" parent="Center/Card/Column"]
+layout_mode = 2
+theme_type_variation = &"OverlayHint"
+text = "Press A or B to close"
+horizontal_alignment = 1

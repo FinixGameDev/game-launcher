@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/button_hint.gd" id="1_script"]
+[ext_resource type="Theme" path="res://theme/launcher_theme.tres" id="2_theme"]
+
+[node name="ButtonHint" type="HBoxContainer"]
+theme = ExtResource("2_theme")
+theme_override_constants/separation = 12
+alignment = 1
+script = ExtResource("1_script")
+glyph = "A"
+caption = "Play"
+pill_color = Color(0.2471, 0.6824, 0.3529, 1)
+glyph_color = Color(1, 1, 1, 1)
+
+[node name="Pill" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(46, 46)
+layout_mode = 2
+size_flags_vertical = 4
+theme_type_variation = &"HintPill"
+
+[node name="Glyph" type="Label" parent="Pill"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HintGlyph"
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Caption" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HintLabel"
+text = "Play"
+vertical_alignment = 1

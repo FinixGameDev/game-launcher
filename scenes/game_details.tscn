@@ -1,0 +1,75 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/game_details.gd" id="1_script"]
+[ext_resource type="Theme" path="res://theme/launcher_theme.tres" id="2_theme"]
+
+[node name="GameDetails" type="VBoxContainer"]
+theme = ExtResource("2_theme")
+theme_override_constants/separation = 24
+script = ExtResource("1_script")
+
+[node name="PreviewPanel" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.35
+theme_type_variation = &"CardPanel"
+
+[node name="Preview" type="TextureRect" parent="PreviewPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PreviewHint" type="Label" parent="PreviewPanel"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"PlaceholderLabel"
+text = "No preview image"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InfoPanel" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_type_variation = &"CardPanel"
+
+[node name="Margin" type="MarginContainer" parent="InfoPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Text" type="VBoxContainer" parent="InfoPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="GameTitle" type="Label" parent="InfoPanel/Margin/Text"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+theme_type_variation = &"GameTitleLabel"
+text = "Game Title"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Meta" type="Label" parent="InfoPanel/Margin/Text"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+theme_type_variation = &"MetaLabel"
+text = "Genre  •  2 players  •  by Your Team"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Description" type="Label" parent="InfoPanel/Margin/Text"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"DescriptionLabel"
+text = "A short pitch for the selected game appears here. Two or three sentences work best."
+autowrap_mode = 3
+clip_text = true
+text_overrun_behavior = 3

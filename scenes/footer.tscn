@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/footer.gd" id="1_script"]
+[ext_resource type="Theme" path="res://theme/launcher_theme.tres" id="2_theme"]
+[ext_resource type="PackedScene" path="res://scenes/button_hint.tscn" id="3_hint"]
+
+[node name="Footer" type="PanelContainer"]
+custom_minimum_size = Vector2(0, 84)
+theme = ExtResource("2_theme")
+theme_type_variation = &"FooterPanel"
+script = ExtResource("1_script")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 40
+
+[node name="Row" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 36
+
+[node name="HintPlay" parent="Margin/Row" instance=ExtResource("3_hint")]
+layout_mode = 2
+glyph = "A"
+caption = "Play"
+pill_color = Color(0.2471, 0.6824, 0.3529, 1)
+
+[node name="HintInfo" parent="Margin/Row" instance=ExtResource("3_hint")]
+layout_mode = 2
+glyph = "Y"
+caption = "Info"
+pill_color = Color(0.902, 0.7059, 0.1333, 1)
+glyph_color = Color(0, 0, 0, 1)
+
+[node name="HintPage" parent="Margin/Row" instance=ExtResource("3_hint")]
+layout_mode = 2
+glyph = "LB/RB"
+caption = "Page"
+pill_color = Color(0.3333, 0.3569, 0.4392, 1)
+
+[node name="Message" type="Label" parent="Margin/Row"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"FooterLabel"
+text = "Tell us what you think!"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Counter" type="Label" parent="Margin/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"CounterLabel"
+text = "1 / 5"
+vertical_alignment = 1

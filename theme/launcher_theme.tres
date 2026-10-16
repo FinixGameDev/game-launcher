@@ -1,0 +1,211 @@
+[gd_resource type="Theme" load_steps=15 format=3]
+
+[sub_resource type="StyleBoxFlat" id="header"]
+bg_color = Color(0.0431, 0.0549, 0.0902, 1.0000)
+
+[sub_resource type="StyleBoxFlat" id="footer"]
+bg_color = Color(0.0431, 0.0549, 0.0902, 1.0000)
+
+[sub_resource type="StyleBoxFlat" id="card"]
+bg_color = Color(0.0627, 0.0784, 0.1216, 0.8784)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 12
+content_margin_top = 12
+content_margin_right = 12
+content_margin_bottom = 12
+
+[sub_resource type="StyleBoxFlat" id="overlay"]
+bg_color = Color(0.0431, 0.0549, 0.0902, 1.0000)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+content_margin_left = 40
+content_margin_top = 40
+content_margin_right = 40
+content_margin_bottom = 40
+
+[sub_resource type="StyleBoxFlat" id="toast"]
+bg_color = Color(0.0000, 0.0000, 0.0000, 0.8510)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 20
+content_margin_top = 20
+content_margin_right = 20
+content_margin_bottom = 20
+
+[sub_resource type="StyleBoxFlat" id="toast_error"]
+bg_color = Color(0.7020, 0.1490, 0.1176, 1.0000)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 20
+content_margin_top = 20
+content_margin_right = 20
+content_margin_bottom = 20
+
+[sub_resource type="StyleBoxFlat" id="hold"]
+bg_color = Color(0.0000, 0.0000, 0.0000, 0.8510)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 18
+content_margin_top = 18
+content_margin_right = 18
+content_margin_bottom = 18
+
+[sub_resource type="StyleBoxFlat" id="pill"]
+bg_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+corner_radius_top_left = 23
+corner_radius_top_right = 23
+corner_radius_bottom_right = 23
+corner_radius_bottom_left = 23
+content_margin_left = 14
+content_margin_top = 0
+content_margin_right = 14
+content_margin_bottom = 0
+
+[sub_resource type="StyleBoxFlat" id="logo_placeholder"]
+bg_color = Color(1.0000, 1.0000, 1.0000, 0.0314)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1.0000, 1.0000, 1.0000, 0.2510)
+
+[sub_resource type="StyleBoxFlat" id="accent_line"]
+bg_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+
+[sub_resource type="StyleBoxFlat" id="dim"]
+bg_color = Color(0.0000, 0.0000, 0.0000, 0.7804)
+
+[sub_resource type="StyleBoxFlat" id="playing"]
+bg_color = Color(0.0431, 0.0549, 0.0902, 1.0000)
+
+[sub_resource type="StyleBoxFlat" id="bar_bg"]
+bg_color = Color(1.0000, 1.0000, 1.0000, 0.1216)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="bar_fill"]
+bg_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[resource]
+default_font_size = 24
+Label/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+Label/font_sizes/font_size = 24
+TeamNameLabel/base_type = &"Label"
+TeamNameLabel/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+TeamNameLabel/font_sizes/font_size = 52
+TaglineLabel/base_type = &"Label"
+TaglineLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+TaglineLabel/font_sizes/font_size = 24
+ClockLabel/base_type = &"Label"
+ClockLabel/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+ClockLabel/font_sizes/font_size = 44
+StatusLabel/base_type = &"Label"
+StatusLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+StatusLabel/font_sizes/font_size = 22
+StatusLabelWarn/base_type = &"Label"
+StatusLabelWarn/colors/font_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+StatusLabelWarn/font_sizes/font_size = 22
+GameTitleLabel/base_type = &"Label"
+GameTitleLabel/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+GameTitleLabel/font_sizes/font_size = 44
+MetaLabel/base_type = &"Label"
+MetaLabel/colors/font_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+MetaLabel/font_sizes/font_size = 22
+DescriptionLabel/base_type = &"Label"
+DescriptionLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+DescriptionLabel/font_sizes/font_size = 25
+PlaceholderLabel/base_type = &"Label"
+PlaceholderLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+PlaceholderLabel/font_sizes/font_size = 26
+LogoHintLabel/base_type = &"Label"
+LogoHintLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+LogoHintLabel/font_sizes/font_size = 20
+HintLabel/base_type = &"Label"
+HintLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+HintLabel/font_sizes/font_size = 26
+HintGlyph/base_type = &"Label"
+HintGlyph/colors/font_color = Color(1.0000, 1.0000, 1.0000, 1.0000)
+HintGlyph/font_sizes/font_size = 24
+FooterLabel/base_type = &"Label"
+FooterLabel/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+FooterLabel/font_sizes/font_size = 24
+CounterLabel/base_type = &"Label"
+CounterLabel/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+CounterLabel/font_sizes/font_size = 28
+OverlayTitle/base_type = &"Label"
+OverlayTitle/colors/font_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+OverlayTitle/font_sizes/font_size = 46
+OverlayBody/base_type = &"Label"
+OverlayBody/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+OverlayBody/font_sizes/font_size = 28
+OverlayHint/base_type = &"Label"
+OverlayHint/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+OverlayHint/font_sizes/font_size = 22
+PlayingLabel/base_type = &"Label"
+PlayingLabel/colors/font_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+PlayingLabel/font_sizes/font_size = 46
+ToastLabel/base_type = &"Label"
+ToastLabel/colors/font_color = Color(1.0000, 1.0000, 1.0000, 1.0000)
+ToastLabel/font_sizes/font_size = 28
+HeaderPanel/base_type = &"PanelContainer"
+HeaderPanel/styles/panel = SubResource("header")
+FooterPanel/base_type = &"PanelContainer"
+FooterPanel/styles/panel = SubResource("footer")
+CardPanel/base_type = &"PanelContainer"
+CardPanel/styles/panel = SubResource("card")
+OverlayPanel/base_type = &"PanelContainer"
+OverlayPanel/styles/panel = SubResource("overlay")
+ToastPanel/base_type = &"PanelContainer"
+ToastPanel/styles/panel = SubResource("toast")
+ToastPanelError/base_type = &"PanelContainer"
+ToastPanelError/styles/panel = SubResource("toast_error")
+HoldPanel/base_type = &"PanelContainer"
+HoldPanel/styles/panel = SubResource("hold")
+HintPill/base_type = &"PanelContainer"
+HintPill/styles/panel = SubResource("pill")
+LogoPlaceholder/base_type = &"PanelContainer"
+LogoPlaceholder/styles/panel = SubResource("logo_placeholder")
+AccentLine/base_type = &"Panel"
+AccentLine/styles/panel = SubResource("accent_line")
+DimBackdrop/base_type = &"Panel"
+DimBackdrop/styles/panel = SubResource("dim")
+PlayingBackdrop/base_type = &"Panel"
+PlayingBackdrop/styles/panel = SubResource("playing")
+ProgressBar/styles/background = SubResource("bar_bg")
+ProgressBar/styles/fill = SubResource("bar_fill")
+GameList/colors/font_color = Color(0.5608, 0.5882, 0.6784, 1.0000)
+GameList/colors/font_selected_color = Color(0.9490, 0.9490, 0.9686, 1.0000)
+GameList/colors/selection_color = Color(1.0000, 0.4196, 0.2078, 0.2196)
+GameList/colors/accent_color = Color(1.0000, 0.4196, 0.2078, 1.0000)
+GameList/colors/separator_color = Color(1.0000, 1.0000, 1.0000, 0.0588)
+GameList/colors/missing_color = Color(0.9020, 0.3529, 0.3020, 0.9020)
+GameList/constants/row_height = 72
+GameList/constants/text_margin = 36
+GameList/font_sizes/font_size = 32
+GameList/font_sizes/tag_font_size = 20
