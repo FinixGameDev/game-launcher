@@ -1,6 +1,7 @@
 # Game Launcher
 
 CODED BY CLAUDE AI
+
 A controller-driven launcher for showing game prototypes at events and playtests.
 Visitors pick a game with a gamepad, the game starts, and when it closes the
 launcher comes back. Styled after EmulationStation, with a slot for your team
